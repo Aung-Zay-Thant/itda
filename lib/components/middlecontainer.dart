@@ -80,6 +80,8 @@ class _MiddleContainerState extends State<MiddleContainer> {
   }
 }
 
+
+// Can Change the Style Of Card Here
 class Cards extends StatelessWidget {
   Cards({this.onPress, this.colour, this.boxname});
 

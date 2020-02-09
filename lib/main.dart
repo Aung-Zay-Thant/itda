@@ -16,6 +16,8 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
+
+  // Dialog When user don't put all informations
   void showError(BuildContext context) {
     showDialog(
         context: context,
@@ -46,6 +48,8 @@ class _SignUpState extends State<SignUp> {
         });
   }
 
+
+// Dialog box of information
   void showInfo(BuildContext context) {
     showDialog(
         context: context,
@@ -103,6 +107,8 @@ class _SignUpState extends State<SignUp> {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+
+            // Upper Part Of the Screen
             TopContainer(),
             Padding(
               padding: const EdgeInsets.only(left: 8.0),
@@ -114,6 +120,8 @@ class _SignUpState extends State<SignUp> {
                     color: Colors.grey),
               ),
             ),
+
+            // Middle Part Of the screen
             MiddleContainer(),
             Padding(
               padding: const EdgeInsets.only(left: 8.0),
@@ -125,6 +133,8 @@ class _SignUpState extends State<SignUp> {
                     color: Colors.grey),
               ),
             ),
+
+            // Name TextField
             Name(),
             Padding(
               padding: const EdgeInsets.only(left: 8.0, top: 16.0),
@@ -136,6 +146,8 @@ class _SignUpState extends State<SignUp> {
                     color: Colors.grey),
               ),
             ),
+
+            // Date Of Birth TextField
             DOB(),
             Center(
               child: GestureDetector(

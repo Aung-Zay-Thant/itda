@@ -5,7 +5,6 @@ const activeColor = Color(0xff356fbb);
 const inactiveColor = Colors.white;
 String member;
 String gender;
-
 enum Gender { male, female }
 
 class TopContainer extends StatefulWidget {
@@ -18,9 +17,10 @@ class _TopContainerState extends State<TopContainer> {
   Gender selectedGender;
   @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
     return Container(
       width: double.infinity,
-      height: MediaQuery.of(context).size.height * 0.18,
+      height: screenSize.height < 750 ? screenSize.height * 0.23 : screenSize.height * 0.19,
       color: Color(0xfff3f3f3),
       child: Row(
         children: <Widget>[
